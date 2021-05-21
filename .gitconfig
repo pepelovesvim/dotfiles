@@ -1,0 +1,7 @@
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[user]
+	email = jeffli.1644@gmail.com
+	name = jeff
