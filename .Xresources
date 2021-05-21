@@ -1,0 +1,2 @@
+Xft.dpi: 144
+*.font: monospace:size=11:antialias=true:autohint=true;

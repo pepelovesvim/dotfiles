@@ -1,0 +1,21 @@
+"*":
+  "atom-material-ui":
+    colors: {}
+    tabs: {}
+  "autocomplete-plus":
+    useCoreMovementCommands: false
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "atom-sublime-monokai-syntax"
+    ]
+  editor:
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "f6e7c81d-6c72-4a55-ba8d-0d08d49e1a12"
+  fonts:
+    fontFamily: "JetBrains Mono"
+  "vim-mode-plus":
+    keymapPToPutWithAutoIndent: true
+    keymapYToYankToLastCharacterOfLine: true
