@@ -172,3 +172,4 @@ source ~/.config/aliasrc
 source /usr/share/nnn/quitcd/quitcd.bash_zsh
 
 # eval "$(starship init zsh)"
+# this is a test for ssh log in 
