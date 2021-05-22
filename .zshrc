@@ -165,6 +165,22 @@ function cd() {
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
+# ctrl+x to execute commands right away
+fzf_history() {
+  local selected
+  IFS=$'\n' selected=($(fc -lnr 1 | fzf --expect=ctrl-x --no-sort --height=40% --query="$BUFFER"))
+  if [[ "$selected" ]]; then
+    LBUFFER="$selected"
+    if [[ ${#selected[@]} -eq 2 ]]; then
+      LBUFFER="${selected[2]}"
+      zle accept-line
+    fi
+  fi
+  zle reset-prompt
+}
+zle -N fzf-history fzf_history
+bindkey "^R" fzf-history
+
 # aliases
 source ~/.config/aliasrc
 
