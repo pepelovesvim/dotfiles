@@ -56,6 +56,7 @@ call plug#end()
 
 " Key bindings
 	map <C-_> :Commentary<CR>
+	map <Enter> O<Esc>
 	map <C-h> :noh<CR>
 	map <C-s> :w<CR>
 	map <F2> :TagbarToggle<CR>
