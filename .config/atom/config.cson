@@ -1,4 +1,6 @@
 "*":
+  Hydrogen:
+    gateways: "[{\"name\": \"valencia\", \"options\": {\"baseUrl\": \"http://127.0.0.1:8888\", \"token\":\"mytokenlol\"}}]"
   "atom-material-ui":
     colors: {}
     tabs: {}
