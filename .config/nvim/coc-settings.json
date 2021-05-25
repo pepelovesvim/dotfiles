@@ -1,0 +1,5 @@
+{
+	"json.enable": true,
+	"signature.target": "echo",
+	"suggest.enablePreview": true
+}
