@@ -42,6 +42,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'svermeulen/vim-yoink'
 	Plug 'yuki-yano/fzf-preview.vim', {'branch': 'release/rpc'}
 	Plug 'mbbill/undotree'
+	Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 " Vim Properties
