@@ -55,6 +55,7 @@ call plug#end()
 	filetype plugin on
 
 " Key bindings
+	map <F3> :%s/\s\+$//e
 	map <C-_> :Commentary<CR>
 	map <Enter> O<Esc>
 	map <C-h> :noh<CR>
@@ -77,9 +78,6 @@ call plug#end()
 	" Compile document, be it groff/LaTeX/markdown/etc.
 	map <leader>c :w! \| !compiler "<c-r>%"<CR>
 	map <leader>z :Files ~<CR>
-
-" autobots
-	autocmd BufWritePre * :%s/\s\+$//e
 
 " jedi vim
 " 	let g:jedi#completions_enabled = 0
@@ -131,7 +129,7 @@ call plug#end()
       \   'gitbranch': 'FugitiveHead'
       \ },
       \ }
-	
+
 " lenght matters
 	let g:lengthmatters_excluded = ['text']
 	call lengthmatters#highlight_link_to('ColorColumn')
