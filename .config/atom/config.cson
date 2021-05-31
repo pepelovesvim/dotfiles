@@ -7,6 +7,9 @@
   "autocomplete-plus":
     useCoreMovementCommands: false
   core:
+    disabledPackages: [
+      "language-python"
+    ]
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
@@ -18,8 +21,28 @@
     userId: "f6e7c81d-6c72-4a55-ba8d-0d08d49e1a12"
   fonts:
     fontFamily: "JetBrains Mono"
+  "todo-show":
+    findTheseTodos: [
+      "TODO"
+      "FIXME"
+      "CHANGED"
+      "XXX"
+      "IDEA"
+      "HACK"
+      "NOTE"
+      "REVIEW"
+      "NB"
+      "BUG"
+      "QUESTION"
+      "COMBAK"
+      "TEMP"
+      "HYPOTHESIS"
+    ]
   "vim-mode-plus":
     keymapPToPutWithAutoIndent: true
     keymapYToYankToLastCharacterOfLine: true
   welcome:
     showOnStartup: false
+".python.source":
+  editor:
+    autoIndentOnPaste: true
