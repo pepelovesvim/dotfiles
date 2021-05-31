@@ -37,7 +37,9 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	z="zathura"
+	z="zathura" \ 
+	portforward="sudo ssh -N -f -L localhost:8888:localhost:8889 jeff.li@valencia.lucenaresearch.com -i ~/.ssh/id_rsa/lrl_keys/neuravest
+"
 
 # dotfile tracker
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.config/dotfiles/ --work-tree=$HOME'
