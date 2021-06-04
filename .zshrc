@@ -185,7 +185,9 @@ bindkey "^R" fzf-history
 source ~/.config/aliasrc
 
 # nnn quit on cd
-source /usr/share/nnn/quitcd/quitcd.bash_zsh
+if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
+	source /usr/share/nnn/quitcd/quitcd.bash_zsh
+fi
 
 # eval "$(starship init zsh)"
 # this is a test for ssh log in 
