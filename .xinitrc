@@ -1,17 +1,17 @@
 #!/bin/sh
 
 xrdb -merge ~/.Xresources
-xset m 0 0 
+xset m 0 0
 
 remaps &
 unclutter &
-udiskie & 
+udiskie &
 feh --bg-fill --randomize ~/wallpapers/* &
 picom --config ~/.picom.conf &
 imwheel -b 45 &
 dwmStatus ~/.local/src/dwmStatus/dwmStatus.json &
 
-# while :; do 
+# while :; do
 # 	ssh-agent dwm
 # done
 autorandr --change work
