@@ -190,4 +190,4 @@ if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
 fi
 
 # eval "$(starship init zsh)"
-# this is a test for ssh log in 
+# this is a test for ssh log in
