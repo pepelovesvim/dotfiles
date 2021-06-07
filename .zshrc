@@ -110,7 +110,7 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
-# vi mode 
+# vi mode
 bindkey -v
 export KEYTIMEOUT=1
 
