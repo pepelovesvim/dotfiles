@@ -1,2 +1,2 @@
 Xft.dpi: 144
-*.font: JetBrains Mono Nerd Font:size=11:antialias=true:autohint=true;
+*.font: monospace:size=11:antialias=true:autohint=true;
