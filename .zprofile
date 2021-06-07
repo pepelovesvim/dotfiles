@@ -10,6 +10,11 @@ export BROWSER="firefox"
 # export ~/.local/bin to PATH
 export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
 
+# ~/ clean-up
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+
 # show hidden files with fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
