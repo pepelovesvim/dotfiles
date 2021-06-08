@@ -146,20 +146,23 @@ function cd() {
 		# case .env/
 		if [[ -d ./.env && -L ./.env ]] ; then
 			source `readlink ./.env`/bin/activate
+			parentdir=`readlink ./.venv`
 		elif [[ -d ./.env ]] ; then
 			source ./.env/bin/activate
+			parentdir=$PWD
 		fi
 		# case .venv/
 		if [[ -d ./.venv && -L ./.venv ]] ; then
 			source `readlink ./.venv`/bin/activate
+			parentdir=$PWD
 		elif [[ -d ./.venv ]] ; then
 			source ./.venv/bin/activate
+			parentdir="$(dirname "$VIRTUAL_ENV")"
 		fi
 	else
 		## check the current folder belong to earlier VIRTUAL_ENV folder
 		# if yes then do nothing
 		# else deactivate
-		parentdir="$(dirname "$VIRTUAL_ENV")"
 		if [[ "$PWD"/ != "$parentdir"/* ]] ; then
 			deactivate
 		fi
