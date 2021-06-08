@@ -9,11 +9,9 @@ case "$(readlink -f /sbin/init)" in
 esac
 
 cmds="\
- lock		slock
 ﴘ leave dwm	kill -TERM $(pgrep -u $USER "\bdwm$")
 屢 renew dwm	kill -HUP $(pgrep -u $USER "\bdwm$")
-⏾ hibernate	slock ${hib:-systemctl suspend-then-hibernate -i}
-ﰇ reboot	${reb:-sudo -A reboot}
+ﰇ reboot	${reb:-sudo reboot}
  shutdown	${shut:-sudo -A shutdown -h now}"
 
 choice="$(echo "$cmds" | cut -d'	' -f 1 | dmenu)" || exit 1
