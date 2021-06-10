@@ -177,6 +177,12 @@ call plug#end()
 	" autocmd BufDelete * if len(filter(range(1, bufnr('$')), '! empty(bufname(v:val)) && buflisted(v:val)')) == 1 | quit | endif
 
 " coc
+	" plugins
+	let g:coc_global_extensions = [
+		\'coc-json',
+		\'coc-pyright',
+		\'coc-tsserver',
+		\]
 	set encoding=utf-8
 
 	" TextEdit might fail if hidden is not set.
