@@ -43,6 +43,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'yuki-yano/fzf-preview.vim', {'branch': 'release/rpc'}
 	Plug 'mbbill/undotree'
 	Plug 'ntpeters/vim-better-whitespace'
+	Plug 'JuliaEditorSupport/julia-vim'
 call plug#end()
 
 " Vim Properties
