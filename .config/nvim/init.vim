@@ -63,10 +63,10 @@ call plug#end()
 	map <Enter> O<Esc>
 	map <C-h> :noh<CR>
 	map <C-s> :w<CR>
-	map <F2> :TagbarToggle<CR>
+	map <leader>t :TagbarOpen fjc<CR>
 	map Y y$
 	" map <leader>v :Vista<CR>
-	map <leader>t :NERDTreeToggle<CR>
+	" map <leader>t :NERDTreeToggle<CR>
 	" map <leader>w :w<CR>
 	map <leader>q :q<CR>
 	xmap ga <Plug>(EasyAlign)
@@ -147,7 +147,8 @@ call plug#end()
 	" let g:syntastic_check_on_wq = 1
 
 " tagbar settings
-	let g:tagbar_autofocus = 1
+	let g:tagbar_sort = 0
+	let g:tagbar_show_tag_linenumbers = 2
 
 " sample settings
 	hi Pmenu ctermfg=254 ctermbg=237 cterm=NONE guifg=#e1e1e1 guibg=#383838 gui=NONE
