@@ -146,7 +146,7 @@ function cd() {
 		# case .env/
 		if [[ -d ./.env && -L ./.env ]] ; then
 			source `readlink ./.env`/bin/activate
-			parentdir=`readlink ./.venv`
+			parentdir=$PWD
 		elif [[ -d ./.env ]] ; then
 			source ./.env/bin/activate
 			parentdir=$PWD
@@ -157,7 +157,7 @@ function cd() {
 			parentdir=$PWD
 		elif [[ -d ./.venv ]] ; then
 			source ./.venv/bin/activate
-			parentdir="$(dirname "$VIRTUAL_ENV")"
+			parentdir=$PWD
 		fi
 	else
 		## check the current folder belong to earlier VIRTUAL_ENV folder
