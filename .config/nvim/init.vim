@@ -60,7 +60,6 @@ call plug#end()
 	" trailing white spaces
 	map <F3> :%s/\s\+$//e<CR>
 	map <C-_> :Commentary<CR>
-	map <Enter> O<Esc>
 	map <C-h> :noh<CR>
 	map <C-s> :w<CR>
 	map <leader>t :TagbarOpen fjc<CR>
