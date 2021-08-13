@@ -6,4 +6,10 @@
 	email = jeffli.1644@gmail.com
 	name = jeff
 [diff]
-	tool = vimdiff
+	tool = vimdiff3
+[difftool "vimdiff3"]
+	path = nvim
+[merge]
+	tool = vimdiff3
+[mergetool "vimdiff3"]
+	path = nvim
