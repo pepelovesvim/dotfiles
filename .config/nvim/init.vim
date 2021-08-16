@@ -2,6 +2,7 @@ let mapleader = "\\"
 
 " vim-plug
 call plug#begin('~/.config/nvim/plugged')
+	Plug 'lambdalisue/session.vim'
 	Plug 'tpope/vim-commentary'
 	Plug 'tpope/vim-surround'
 	Plug 'junegunn/vim-easy-align'
