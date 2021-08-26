@@ -45,6 +45,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'mbbill/undotree'
 	Plug 'ntpeters/vim-better-whitespace'
 	Plug 'JuliaEditorSupport/julia-vim'
+	Plug 'svermeulen/vim-yoink'
 call plug#end()
 
 " Vim Properties
