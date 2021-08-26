@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-# python wanrings
-export PYTHONWARNINGS="ignore"
-
 export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="firefox"
