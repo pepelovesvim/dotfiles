@@ -10,6 +10,7 @@ alias \
 	rm="rm -vI" \
 	mkd="mkdir -pv" \
 	xargs="xargs "
+	xclip="xclip -selection clipboard "
 	# yt="youtube-dl --add-metadata -i" \
 	# yta="yt -x -f bestaudio/best" \
 	# ffmpeg="ffmpeg -hide_banner"
