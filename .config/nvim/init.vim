@@ -68,7 +68,7 @@ call plug#end()
 	map <leader>t :TagbarOpen fjc<CR>
 	map Y y$
 	" map <leader>v :Vista<CR>
-	" map <leader>t :NERDTreeToggle<CR>
+	map <F2> :NERDTreeToggle<CR>
 	" map <leader>w :w<CR>
 	map <leader>q :q<CR>
 	xmap ga <Plug>(EasyAlign)
