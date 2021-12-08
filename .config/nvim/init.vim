@@ -25,7 +25,8 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'itchyny/lightline.vim'
 	Plug 'junegunn/gv.vim'
 	Plug 'mhinz/vim-startify'
-	Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+	" Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+	Plug 'ryanoasis/vim-devicons'
 	Plug 'akinsho/nvim-bufferline.lua'
 	" Plug 'vim-syntastic/syntastic'
 	Plug 'mattn/emmet-vim'
