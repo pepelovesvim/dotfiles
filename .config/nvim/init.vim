@@ -14,7 +14,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'ruanyl/vim-gh-line'
 	Plug 'tpope/vim-fugitive'
 	" Plug 'liuchengxu/vista.vim'
-	Plug 'junegunn/fzf.vim', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
 	Plug 'yegappan/mru'
 	Plug 'dense-analysis/ale'
 	Plug 'airblade/vim-gitgutter'
