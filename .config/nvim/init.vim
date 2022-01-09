@@ -131,7 +131,7 @@ call plug#end()
 	  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
 	  \ },
 	  \ 'component_function': {
-	  \   'gitbranch': 'FugitiveHead'
+	  \   'gitbranch': 'fugitive#head'
 	  \ },
 	  \ }
 
