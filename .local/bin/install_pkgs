@@ -1,2 +1,8 @@
 #!/bin/sh
-sudo pacman -S freetype2 neovim pkgconf
+sudo pacman -S base-devel freetype2 neovim pkgconf which code && \
+
+git clone https://aur.archlinux.org/yay.git && \
+cd yay && \
+echo yes | makepkg -si && \
+cd .. && \
+rm -rf && yay
