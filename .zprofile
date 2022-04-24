@@ -27,5 +27,8 @@ export GTK_THEME=Adwaita:dark
 # atom read path
 export ATOM_HOME=$HOME/.config/atom
 
+# python
+export PYTHONSTARTUP="${XDG_CONFIG_HOME:-$HOME/.config}/pythonstartup.py"
+
 # start X11 on startup
 [ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx
