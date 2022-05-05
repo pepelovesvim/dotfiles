@@ -25,9 +25,8 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'itchyny/lightline.vim'
 	Plug 'junegunn/gv.vim'
 	Plug 'mhinz/vim-startify'
-	" Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+	Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 	Plug 'ryanoasis/vim-devicons'
-	Plug 'akinsho/nvim-bufferline.lua'
 	" Plug 'vim-syntastic/syntastic'
 	Plug 'mattn/emmet-vim'
 	Plug 'machakann/vim-highlightedyank'
@@ -47,7 +46,14 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'ntpeters/vim-better-whitespace'
 	Plug 'JuliaEditorSupport/julia-vim'
 	Plug 'svermeulen/vim-yoink'
+	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 call plug#end()
+
+" bufferline
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
 
 " Vim Properties
 	set relativenumber
