@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo pacman -S base-devel freetype2 neovim pkgconf which code nodejs rofi feh picom alsa-utils \
               rust dnsutils wireless_tools tlp tlp-rdw htop unclutter gnome-keyring \
-			  maim xclip ripgrep xf86-input-synaptics \
+			  maim xclip ripgrep xf86-input-synaptics zip unzip\
               && \
 
 git clone https://aur.archlinux.org/yay.git && \
