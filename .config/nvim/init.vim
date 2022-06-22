@@ -47,6 +47,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'JuliaEditorSupport/julia-vim'
 	Plug 'svermeulen/vim-yoink'
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+	Plug '/bkad/CamelCaseMotion'
 call plug#end()
 
 " bufferline
